@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+.tab {
+  float: left;
+  border: 1px solid #646161;
+  background-color: #f1f1f1;
+  width: 200px;
+  height: 750px;
+  text-align: center;
+  
+}
+
+div.scroll {
+  
+        width: 200px;
+        height: 750px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
+        padding: 20px;    
+            }
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  float: left;
+  padding: 100px 50px 50px 50px;
+  border: 1px solid #ccc;
+  width: 900px;
+  border-left: none;
+  height: 900px;
+  background-color: #b8b5b5;
+}
+
+
+
+.column {
+  float: left;
+  width: 500px;
+  padding: 40px;
+  padding-left:70px;
+  padding-right: 70px;
+  padding-bottom:60px;
+  height:450px;
+  margin:100px;
+  margin-right:100px;
+  margin-bottom: 100px;
+  background-color:rgb(201, 197, 197);
+  border-radius: 50px;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <div class="scroll">
+  <br><br>
+  <img src="C:\Users\user\Pictures\Screenshots\Screenshot (31).png"  width="100" height="100"/>
+  <br><br>Dr. Sugandha Singh<br><br>
+  <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+  <button class="tablinks" onclick="openCity(event, 'Res')">Responsibilites </button>
+  <button class="tablinks" onclick="openCity(event, 'Awards')">Awards </button>
+  <button class="tablinks" onclick="openCity(event, 'Patents')">Patents </button>
+  <button class="tablinks" onclick="openCity(event, 'Speaker')">Invited Speaker </button>
+  <button class="tablinks" onclick="openCity(event, 'Member')">Professional Memberships </button>
+  <button class="tablinks" onclick="openCity(event, 'Books')">Book Publications</button>
+  <button class="tablinks" onclick="openCity(event, 'Organized')">Workshops/Seminars Organised</button>
+  <button class="tablinks" onclick="openCity(event, 'Attended')">Workshops/Seminars Attended</button>
+</div></div>
+
+<div id="home" class="tabcontent">
+  <br><br>
+  <img src="C:\Users\user\Pictures\Screenshots\Screenshot (31).png" style="float: left;" width="200" height="300"/><h1 >&ensp; Dr.Sugandha Singh</h1>
+  <h3>&ensp; <u>Current position</u></h3>
+  <b>&ensp;Senior professor,Department of Artificial Intelligence and Machine &ensp;Learning(AI&ML)
+  Chaitanya Bharathi Institute Of Technology,Gandipet,Hyderabad,Telangana
+  </b><br><br><br><br><br><br>&ensp;
+  <b style="background-color: #a19d9d;">&ensp;sugandhasingh_cseaiml@cbit.ac.in</b>
+</div>
+
+<div id="Education" class="tabcontent">
+  <div class="column">
+    <h1>Education</h1>
+    <table>
+      <tr>
+        <th>Educational Qualifications</th><th>Name of the degree</th><th>Class</th>
+      </tr>
+      <tr>
+        <td>Ph. D</td><td>Doctor of Philosophy</td><td>Awarded</td>
+      </tr>
+      <tr>
+        <td>PG</td><td>M.Tech(CSE)</td><td>First Class</td>
+      </tr>
+      <tr>
+        <td>UG</td><td>B.E(CSE)</td><td>First Class</td>
+      </tr>
+      <tr>
+        <td>Post Graduate Diploma</td><td>PGDM(HR&PR)</td><td>First Class</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div id="Res" class="tabcontent">
+  <div class="con">
+<h1>Responsibilities held</h1>
+<ul>
+  <li>Head of CSE-AIML & AIML Department</li>
+    <li>Co-Chairperson, Technical Committee (Sudhee ’23)</li>
+</ul></div>
+</div>
+
+<div id="Awards" class="tabcontent">
+  <h1>Awards Received</h1>
+  <ul>
+    <li>Best Teacher Award at JIET Jodhpur, 2009-10 & 2010-11</li>
+    <li>Best Innovator Award by NITI Ayog Savitribai Phule Excellence
+      Awards-Dec ‘22</li>
+    <li>Best Innovative Teacher by KRA-MSME Registered
+      Organization-Jan ‘23</li>
+  </ul>
+  </div>
+
+  <div id="Patents" class="tabcontent">
+    <h1>Patents</h1>
+    <ul>
+      <li>Invisible Drone: Indian Published (IN-GJ40385995603418T)-
+        Idea Patent</li>
+      <li>Electric Vehicle: Indian Published (IN-GJ86228193997348UIdea) Patent</li>
+      <li>Milk Vending Machine: Submitted for Grant (Application No:
+        357144-001)- Design Patent</li>
+    </ul>
+    </div>
+
+    <div id="Speaker" class="tabcontent">
+      <h1>Invited Speaker</h1>
+      <ul>
+        <li>Invited speaker at IITM, Delhi</li>
+        <li>Speaker at LPU, Jalandhar</li>
+        <li>Speaker at PIT, Chennai</li>
+        <li>Reviewer of International Journal of Wireless Information
+          Networks, Springer and IEEE referred conferences</li>
+      </ul>
+      </div>
+
+    <div id="Member" class="tabcontent">
+        <h1>Professional Memberships</h1>
+        <ul>
+          <li>Senior Member IEEE (90511462)</li>
+          <li>IEEE Women in Engineering</li>
+          <li>IEEE Computer Society</li>
+          <li>IEEE Vehicular Technology Society</li>
+          <li>IEEE Computer Communication</li>
+          <li>Member CSI</li>
+          <li>Member, Computer Science Teacher Association (CSTA)</li>
+          <li>Member, Journal and Event Management System (JEMS)</li>
+          <li>Member, ECEDHA (Electrical and Computer Engineering
+            Department Head Association)</li>
+          <li>Academic Counsel Member-PDM University, GHRCE and
+            HITAM</li>
+            
+    </ul>
+    </div>
+
+    <div id="Books" class="tabcontent">
+      <h1>Books Published</h1>
+      <ul>
+        <li>“Internet of Things- Industry 4.0” Published by Notion Press
+          March 2022</li>
+        <li>‘Network Unleashed’ published by Laxmi Publications July
+          2010.</li>
+          <li>‘Introduction to Microprocessor’ published by Kalyani
+          Publishers for Punjab Technical University in 2006.</li>
+          <li>‘Leadership and Change Management’ APGH Publishing
+          house in Sept 2022</li>
+          
+  </ul>
+  </div>
+
+  <div id="Organized" class="tabcontent">
+    <h1>Worksops/Seminars Organised</h1>
+    <ul>
+      <li>IEEE Refereed International Conference Latest trends in IT2007 at PCTE-Ludhiana</li>
+      <li>Technical fest-2007 at PCTE-Ludhiana</li>
+      <li>National Level Technical competition- 2009 at MSIT Delhi</li>
+      <li>IEEE Refereed International Conference on computer
+      engineering and technology-2010 at JIET Jodhpur</li>
+      <li>Prelims Smart India Hackathon’22 at HITAM Hyderabad</li>
+      <li>National EWB Event INNOFIESTA’22 at HITAM Hyderabad</li>
+      <li>Machine Learning 5-day workshop by NITTTR-Chandigarh at
+        PDM University</li>
+      <li>IoT Training and Projects with IIITH at HITAM Hyderabad</li>
+      <li>Establishment of Teaching and Learning Centre at HITAM
+        Hyderabad</li>
+      <li>Establishment of Microsoft innovation center at PDM
+        University.</li>
+      <li>Establishment of SAP Centre at PDM University and GHRCE
+        Nagpur</li>
+      <li>Establishment of CISCO Centre at PDM University, GHRCE,
+        Nagpur and HITAM Hyderabad</li>
+      <li>Establishment of Formula 5 Race Car designing Centre at
+        GHRCE, Nagpur</li>
+      <li>Establishment of IEEE student branch at MSIT Delhi</li>
+</ul>
+</div>
+
+<div id="Attended" class="tabcontent">
+  <h1>Worksops/Seminars Attended</h1>
+  <ul>
+    <li>National Conference on Global Trends in I.T, at Punjab College
+      of Technical Education, Baddowal (Ludhiana) in April2006.</li>
+    <li>National Seminar on Emerging Technologies in the field of
+      Electronics, Telecommunication and Control System, at
+      C.I.T.M. MREI, Faridabad March 31,200</li>
+    <li>Faculty Development Program on Energy Research and
+      Management, at PDMCE, Bahadurgarh on July 14, 2015.</li>
+    <li>Cisco Networking Academy Conference-2016 at Amity
+      University, Noida</li>
+    <li>Cisco Networking Academy Conference-2017 at Radisson
+      Hotel, Noida</li>
+    <li>Cisco Networking Academy Conference-2018 at Radisson
+      Hotel, Noida</li>
+    <li>ATAL-FDP on Smart Cities Sep 20-24, 2022</li>
+    <li>ATAL-FDP on Quantum Computing Jan 17-21, 2022</li>
+    <li>ATAL-FDP on Intellectual Property Rights Feb 07-11, 2022</li>
+    <li>IUCEE Leadership Summit July 10-11, 2022 GOA</li>
+    <li>EDU Summit April 10-11, 2022, Hyderabad</li>
+</ul>
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+  
+</body>
+</html> 
